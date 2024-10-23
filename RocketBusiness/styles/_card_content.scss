@@ -1,0 +1,303 @@
+img{
+  cursor: pointer;
+}
+
+.card__content___wrapper{
+  height: 460px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 320px) and (max-width: 767px){
+    height: 1200px;
+  }
+}
+
+.card_product{
+  background-size: 110%;
+  background-position: center;
+  transition: background-size 0.5s ease;
+  border-radius: 5px;
+  &:hover{
+    background-size: 120% !important;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    position: relative;
+    width: 320px !important;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: 130%;
+    transition: background-size 0s ease !important;
+    &:hover{
+      background-size: 130% !important;
+    }
+  }
+}
+
+.card_wrapper{
+  display: flex;
+  @media (min-width: 768px) and (max-width: 1024px){
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.first_card_product-wrapper {
+  width: 387px;
+  background-image: url("../public/goroshek.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px;
+  @media (min-width: 768px) and (max-width: 1024px){
+    order: 1;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    height: 328px;
+    margin: 0;
+  }
+}
+
+.up_content{
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  padding: 10px;
+  p{
+    padding: 0;
+  }
+}
+
+.icon_wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.down_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  p{
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+.promotion_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 5px;
+  p{
+    font-size: 15px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    flex-direction: row;
+  }
+}
+
+.price-offer__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  p{
+    font-size: 16px;
+    padding: 0;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.second_card__product-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  @media (min-width: 768px) and (max-width: 1024px){
+    order: 3;
+    flex-direction: row;
+    grid-column: 1/-1;
+    gap: 0;
+    margin: 20px 0 0 0;
+  }
+}
+
+.second_card {
+  width: 387px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: 768px) and (max-width: 1024px){
+    height: 140px;
+  }
+}
+
+.berry {
+  background-image: url("../public/beries.png");
+  @media (min-width: 320px) and (max-width: 767px){
+    margin-top: 10px;
+  }
+}
+
+.carrot {
+  background-image: url("../public/carrot.png");
+}
+
+.third_card__product-wrapper {
+  display: flex;
+  margin-left: 10px;
+  gap: 10px;
+  @media (min-width: 768px) and (max-width: 1024px){
+    order: 2;
+    margin-left: 10px;
+    gap: 25px;
+    height: 280px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    //Слайдер
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.third_card {
+  width: 200px;
+  @media (min-width: 768px) and (max-width: 1024px){
+    width: 180px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    width: 230px;
+    height: 410px;
+  }
+}
+
+
+.background_image{
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  padding: 5px;
+  .promotion_wrapper {
+    p {
+      padding: 0 5px 0 5px;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+    @media (min-width: 320px) and (max-width: 767px){
+      position: relative;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+    }
+
+  }
+  .icon_wrapper{
+    align-items: end;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    width: 230px !important;
+    height: 50%;
+  }
+}
+
+.white_back{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  height: 50%;
+  border-radius: 0 0 5px 5px;
+  p{
+    color: #444444;
+    font-size: 16px;
+  }
+  .price-offer__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    height: 40%;
+    button{
+      width: 200px;
+    }
+  }
+}
+
+.popcorn_back{
+  background-image: url("../public/popCorn.png");
+}
+
+.ice_cream__back{
+  background-image: url("../public/iceCream.png");
+}
+
+.dots{
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  .slide {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+    display: none;
+  }
+
+  .slide.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #717171;
+  }
+}

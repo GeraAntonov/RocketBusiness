@@ -1,4 +1,7 @@
-import './style.scss';
+import '../styles/style.scss';
+import './bgImageParallax.js';
+import './slider.js'
+import axios from "axios";
 
 document.querySelectorAll('.toggleButton').forEach(button => {
     button.addEventListener('click', function() {
@@ -50,14 +53,27 @@ document.getElementById("requestForm").addEventListener("submit", function(event
     }
 
     if (valid) {
-        alert("Форма отправлена!");
+        const data = {
+            name: nameField.value,
+            phone: phoneField.value
+        };
 
-        formModal.classList.remove('show');
-        coverBackground.classList.add('fade-out');
+        axios.post('https://6718f3757fc4c5ff8f4bd37c.mockapi.io/users', data)
+            .then(response => {
+                alert("Форма успешно отправлена!");
+                console.log('Response:', response.data);
 
-        setTimeout(() => {
-            coverBackground.style.display = 'none';
-        }, 300);
+                formModal.classList.remove('show');
+                coverBackground.classList.add('fade-out');
+
+                setTimeout(() => {
+                    coverBackground.style.display = 'none';
+                }, 300);
+            })
+            .catch(error => {
+                console.error('Ошибка при отправке данных:', error);
+                alert("Произошла ошибка при отправке формы.");
+            });
     }
 });
 

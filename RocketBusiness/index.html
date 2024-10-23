@@ -1,179 +1,181 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Play.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rocket App</title>
-  </head>
-  <body>
-    <div class="up_content__wrapper">
-      <div class="header-video" id="videoBlock">
-        <a href="#" class="video-button" id="playButton">Смотреть видео<img src="./public/Play.png"></a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Play.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocket App</title>
+</head>
+<body>
+<div class="video_content__wrapper">
+  <div class="video_content__overlay" id="videoBlock">
+    <a href="#" class="up_content__show-video-btn" id="playButton">
+      Смотреть видео
+      <img src="./public/Play.png">
+    </a>
+  </div>
+
+  <div id="videoContainer" style="display: none; margin-top: 20px;">
+    <iframe width="1200" height="500" src="https://rutube.ru/play/embed/8b07ab2281235edaec284f914a355817/"
+            frameBorder="0" allow="clipboard-write; autoplay"
+            webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    <img src="./public/x.png" class="close_video__button" id="closeButton"
+         style="display: block; margin: 10px auto 0 auto; cursor:pointer">
+  </div>
+</div>
+
+<div class="card__content___wrapper">
+  <div class="card_wrapper">
+    <div class="first_card_product-wrapper card_product">
+      <div class="up_content">
+        <p>Горох в стручках, 1 кг</p>
+
+        <div class="icon_wrapper">
+          <img src="./public/heart.png">
+          <img src="./public/eye.png">
+        </div>
       </div>
 
-      <div id="videoContainer" style="display: none; margin-top: 20px;">
-        <iframe width="720" height="405" src="https://rutube.ru/play/embed/8b07ab2281235edaec284f914a355817/" frameBorder="0" allow="clipboard-write; autoplay"
-                webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        <img src="./public/x.png" class="video-button" id="closeButton" style="display: block; margin: 10px auto 0 auto; cursor:pointer">
+      <div class="down_content">
+        <div class="promotion_wrapper">
+          <p class="green_background">- 29%</p>
+          <p class="orange_background">Товар дня</p>
+        </div>
+
+        <div class="price-offer__wrapper">
+          <p>570 ₽</p>
+          <button class="toggleButton">Оставить заявку</button>
+        </div>
       </div>
     </div>
-    <div class="down__content___wrapper">
-      <div class="card_wrapper">
-        <div class="first_card_product">
-          <div class="up_content">
-            <div class="left_wrapper">
-              <p>Горох в стручках, 1 кг</p>
+
+    <div class="second_card__product-wrapper">
+      <div  class="second_card card_product berry">
+        <div class="up_content">
+          <p>Голубика лесная, 200 г</p>
+
+          <div class="icon_wrapper">
+            <img src ="./public/heart.png">
+            <img src ="./public/eye.png">
+          </div>
+        </div>
+
+        <div class="down_content">
+          <div class="promotion_wrapper">
+            <p class="pink_background">- 31%</p>
+            <p class="blue_background">Распродажа</p>
+          </div>
+
+          <div class="price-offer__wrapper">
+            <p>140 ₽</p>
+            <button class="toggleButton">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="second_card card_product carrot">
+        <div class="up_content">
+          <p>Морковь мытая, 1 кг</p>
+
+          <div class="icon_wrapper">
+            <img src ="./public/heart.png">
+            <img src ="./public/eye.png">
+          </div>
+        </div>
+
+        <div class="down_content">
+          <div class="promotion_wrapper">
+            <p class="purple_background">Хит</p>
+          </div>
+
+          <div class="price-offer__wrapper">
+            <p>140 ₽</p>
+            <button class="toggleButton">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="third_card__product-wrapper card_product ">
+
+        <div class="third_card popcorn slide">
+          <div class="background_image card_product popcorn_back">
+            <div class="promotion_wrapper">
+              <p class="orange_background">Товар дня</p>
+              <p class="green_background">- 29%</p>
             </div>
 
-            <div class="right_wrapper">
-              <p><img src ="./public/heart.png"></p>
-              <p><img src ="./public/eye.png"></p>
+            <div class="icon_wrapper">
+              <img src ="./public/heart.png">
+              <img src ="./public/eye.png">
             </div>
           </div>
 
-          <div class="down_content">
-            <div class ="left_wrapper">
-              <p class="green_background">- 29%</p>
-              <p class="orange_background">Товар дня</p>
-            </div>
+          <div class="white_back">
+            <p>Попкорн солёный, для СВЧ-печи, 120 г</p>
 
-            <div class="right_wrapper">
-              <h2>570 ₽</h2>
+            <div class="price-offer__wrapper">
+              <p>160 ₽</p>
               <button class="toggleButton">Оставить заявку</button>
             </div>
           </div>
         </div>
 
-        <div class="second_card__product">
-          <div class="berry">
-            <div class="up_content">
-              <div class="left_wrapper">
-                <p>Голубика лесная, 200 г</p>
-              </div>
-
-              <div class="right_wrapper">
-                <p><img src ="./public/heart.png"></p>
-                <p><img src ="./public/eye.png"></p>
-              </div>
+        <div class="third_card ice_cream slide">
+          <div class="background_image card_product ice_cream__back">
+            <div class="promotion_wrapper">
+              <p class="purple_background">Хит</p>
             </div>
 
-            <div class="down_content">
-            <div class="left_wrapper">
-              <p class="pink_background">- 31%</p>
-              <p class="blue_background">Распродажа</p>
-            </div>
-
-              <div class="right_wrapper">
-                <h2>140 ₽</h2>
-                <button class="toggleButton">Оставить заявку</button>
-              </div>
+            <div class="icon_wrapper">
+              <img src ="./public/heart.png">
+              <img src ="./public/eye.png">
             </div>
           </div>
 
-          <div class="carrot">
-            <div class="up_content">
-              <div class="left_wrapper">
-                <p>Морковь мытая, 1 кг</p>
-              </div>
+          <div class="white_back">
+            <p>Эскимо с малиной, 150 г</p>
 
-              <div class="right_wrapper">
-                <p><img src ="./public/heart.png"></p>
-                <p><img src ="./public/eye.png"></p>
-              </div>
-            </div>
-
-            <div class="down_content">
-              <div class="left_wrapper">
-                <p class="purple_background">Хит</p>
-              </div>
-
-              <div class="right_wrapper">
-                <h2>140 ₽</h2>
-                <button class="toggleButton">Оставить заявку</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="third_card__product">
-
-          <div class="popcorn">
-            <div class="popcorn_back">
-              <div class="left_wrapper">
-                <p class="orange_background">Товар дня</p>
-                <p class="green_background">- 29%</p>
-              </div>
-
-              <div class="right_wrapper">
-                <p><img src ="./public/heart.png"></p>
-                <p><img src ="./public/eye.png"></p>
-              </div>
-            </div>
-
-            <div class="white_back">
-              <div class="up_wrapper">
-                <p>Попкорн солёный, для СВЧ-печи, 120 г</p>
-              </div>
-
-              <div class="down_wrapper">
-                <h2>160 ₽</h2>
-                <button class="toggleButton">Оставить заявку</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="ice_cream">
-            <div class="ice_cream__back">
-              <div class="left_wrapper">
-                <p class="purple_background">Хит</p>
-              </div>
-
-              <div class="right_wrapper">
-                <p><img src ="./public/heart.png"></p>
-                <p><img src ="./public/eye.png"></p>
-              </div>
-            </div>
-
-            <div class="white_back">
-              <div class="up_wrapper">
-                <p>Эскимо с малиной, 150 г</p>
-              </div>
-
-              <div class="down_wrapper">
-                <h2>190 ₽</h2>
-                <button class="toggleButton">Оставить заявку</button>
-              </div>
+            <div class="price-offer__wrapper">
+              <p>190 ₽</p>
+              <button class="toggleButton">Оставить заявку</button>
             </div>
           </div>
         </div>
       </div>
+    <div class="dots">
+      <span class="dot" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
     </div>
+    </div>
+</div>
 
-    <div class="cover_background">
-      <div class="modal" id="formModal">
-        <div class="modal_header__wrapper">
-          <h2>Оставьте заявку</h2>
-          <img id="closeModal" src="./public/x.png" class="video-button" id="closeButton" style="display: block; height: 18px; cursor:pointer">
-        </div>
-        <form id="requestForm" novalidate>
-          <div class="up_wrapper">
-            <input type="text" placeholder="Ваше имя *" id="name" required>
-            <span class="error-message" id="nameError">Поле не заполнено</span>
+<div class="cover_background">
+  <div class="modal" id="formModal">
+    <div class="modal_header__wrapper">
+      <h2>Оставьте заявку</h2>
+      <img id="closeModal" src="./public/x.png" class="video-button"  style="display: block; height: 18px; cursor:pointer">
+    </div>
+    <form id="requestForm" novalidate>
+      <div class="up_wrapper">
+        <input type="text" placeholder="Ваше имя *" id="name" required>
+        <span class="error-message" id="nameError">Поле не заполнено</span>
 
-            <input type="tel" placeholder="Номер телефона *" id="phone" required>
-            <span class="error-message" id="phoneError">Поле не заполнено</span>
-          </div>
-          <div class="wrapper">
-            <label>
-              <input type="checkbox" id="agreement" required>
-              Я соглашаюсь на обработку персональных данных
-            </label>
-            <button type="submit">Отправить</button>
-          </div>
-        </form>
+        <input type="tel" placeholder="Номер телефона *" id="phone" required>
+        <span class="error-message" id="phoneError">Поле не заполнено</span>
       </div>
-    </div>
+      <div class="wrapper">
+        <label>
+          <input type="checkbox" id="agreement" required>
+          Я соглашаюсь на обработку персональных данных
+        </label>
+        <button type="submit">Отправить</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+<script type="module" src="./scripts/main.js"></script>
+</body>
 </html>

@@ -1,0 +1,83 @@
+@import 'video_content', 'modal', 'card_content';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  border: 1px solid #bcb4b4;
+}
+
+:root {
+  max-width: 1440px;
+  margin: auto;
+  background-color: #c1dcc9;
+  @media (min-width: 768px) and (max-width: 1024px){
+    max-width: 1024px;
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    max-width: 360px;
+  }
+}
+
+.green_background{
+  background-color: #18C576;
+}
+
+.orange_background{
+  background-color: #FFA726;
+}
+
+.pink_background {
+  background-color: #FF5BC6;
+}
+
+.blue_background {
+  background-color: #39B0F4;
+}
+
+.purple_background {
+  background-color: #AC59F1;
+}
+
+a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+p{
+  color: white;
+  font-family: Inter, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+button{
+  background-color: #18C576;
+  border: none;
+  border-radius: 5px;
+  width: Hug (142px)px;
+  height: Hug (32px)px;
+  padding: 6px 20px 6px 20px;
+  gap: 30px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  &:hover{
+    background-color: #265c48;
+  }
+  &:active{
+    transform: scale(0.90);
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    width: 300px;
+  }
+}
+
+
+
+
